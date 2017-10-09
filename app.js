@@ -57,23 +57,33 @@ var collection = db.collection('restaurants');
 
 //  var updateResturant = prompt("Type the name of the restruant you want to update: ");
 //   collection.find({"name" : updateResturant}).forEach(function(doc){
+    //goes through collection to find a name that matched the update restruant
 //    console.log(doc);
 
  //   var updateFeild = prompt("Please type the feild you would like to update and press enter: 'name', 'streetAddress', 'zip code' or 'yelpUrl'? ");
     
 //    if (updateFeild == "name") {
+      // if the update feild is name then do this
 //      var newName = prompt("Please type the name you want to update and press enter: ");
+        //promts the use to type the new name they want to enter and stores the reposne in the new name variable
 //      collection.update( {"name" : updateResturant}, {$set:{ "name" : newName}});
+        //find the name the user originally typed it and sets it to the value of the new name
 //      console.log(newName);
 
 //    } else if (updateFeild == "streetAddress") {
-//      var newStreet = prompt("WPlease type the address you want to update and press enter: ");
+        // if the update feils is street address do this
+//      var newStreet = prompt("Please type the address you want to update and press enter: ");
+        //ask the user to typle in the new street address
 //      collection.update( {"name" : updateResturant}, {$set:{ 'address.street' : newStreet}} );
+        //update the collection with the new address
 //      console.log(newStreet);
 
 //   } else if (updateFeild == "zip code") {
+        // if the user types in zip code do this
 //      var newZip = prompt("Please type the zipcode you want to update and press enter: ");
+        
 //      collection.update( {"name" : updateResturant}, {$set:{ 'address.zipcode' : newZip}} );
+        //update new zip code
 //      console.log(newZip);
 
 //    } else if (updateFeild == "yelpUrl"){ 
